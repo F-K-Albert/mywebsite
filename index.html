@@ -207,6 +207,7 @@
             gap: 20px;
         }
         
+        
         /* Ventures Section */
         .ventures {
             background-color: white;
@@ -217,7 +218,6 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-        
         .venture-card {
             background-color: white;
             border-radius: 8px;
@@ -230,7 +230,6 @@
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
-        
         .venture-img {
             height: 200px;
             background-color: var(--light);
@@ -244,7 +243,7 @@
         .venture-content {
             padding: 25px;
         }
-        
+
         .venture-content h3 {
             font-size: 1.5rem;
             margin-bottom: 10px;
@@ -284,7 +283,6 @@
             justify-content: center;
             color: var(--primary);
             font-size: 0.8rem;
-            transition: all 0.3s ease;
         }
         
         .platform-icon:hover {
@@ -345,7 +343,7 @@
             font-family: serif;
         }
         
-        /* Connect Section */
+       /* Connect Section */
         .connect {
             background-color: white;
         }
@@ -363,7 +361,6 @@
             text-align: center;
             transition: transform 0.3s ease;
         }
-        
         .connect-card:hover {
             transform: translateY(-10px);
         }
@@ -379,7 +376,6 @@
             margin-bottom: 15px;
             color: var(--primary);
         }
-        
         .connect-card p {
             margin-bottom: 20px;
             color: #555;
@@ -747,8 +743,8 @@
                         <i class="fab fa-facebook-f"></i>
                     </div>
                     <h3>Facebook</h3>
-                    <p data-i18n="connect">Inspire, lead, and build communities with purpose.</p>
-                    <a href="https://facebook.com/fkalbert" target="_blank" class="btn">Connect</a>
+                    <p data-i18n="facebook_desc">Inspire, lead, and build communities with purpose.</p>
+                    <a href="https://facebook.com/fkalbert" target="_blank" class="btn" data-i18n="facebook_connect">Connect</a>
                 </div>
                 
                 <!-- WhatsApp -->
@@ -757,8 +753,8 @@
                         <i class="fab fa-whatsapp"></i>
                     </div>
                     <h3>WhatsApp Business</h3>
-                    <p data-i18n="message">Message directly for consultations, partnerships, or business inquiries.</p>
-                    <a href="https://wa.me/233594166010" target="_blank" class="btn">Message</a>
+                    <p data-i18n="WhatsApp_desc">Message directly for consultations, partnerships, or business inquiries.</p>
+                    <a href="https://wa.me/233594166010" target="_blank" class="btn" data-i18n="message">Message</a>
                 </div>
                 
                 <!-- LinkedIn -->
@@ -767,8 +763,8 @@
                         <i class="fab fa-linkedin-in"></i>
                     </div>
                     <h3>LinkedIn</h3>
-                    <p data-i18n="details">For professional networking, investor relations, and leadership content.</p>
-                    <a href="https://linkedin.com/in/fkalbert" target="_blank" class="btn" data-i18n="connect">Connect</a>
+                    <p data-i18n="linkedin_desc">For professional networking, investor relations, and leadership content.</p>
+                    <a href="https://linkedin.com/in/fkalbert" target="_blank" class="btn" data-i18n="linkedin_connect">Connect</a>
                 </div>
                 
                 <!-- Instagram -->
@@ -777,7 +773,7 @@
                         <i class="fab fa-instagram"></i>
                     </div>
                     <h3>Instagram</h3>
-                    <p data-i18n="details">Follow my journey through visuals, stories, and Kingdom business insights.</p>
+                    <p data-i18n="instagram_desc">Follow my journey through visuals, stories, and Kingdom business insights.</p>
                     <a href="https://instagram.com/fkalbert" target="_blank" class="btn" data-i18n="follow">Follow</a>
                 </div>
                 
@@ -787,8 +783,8 @@
                         <i class="fab fa-twitter"></i>
                     </div>
                     <h3>Twitter (X)</h3>
-                    <p data-i18n="details">Daily financial wisdom, Gospel truths, and leadership thoughts.</p>
-                    <a href="https://twitter.com/fkalbert" target="_blank" class="btn">Follow</a>
+                    <p data-i18n="twitter_desc">Daily financial wisdom, Gospel truths, and leadership thoughts.</p>
+                    <a href="https://twitter.com/fkalbert" target="_blank" class="btn"data-i18n="follow">Follow</a>
                 </div>
                 
                 <!-- YouTube -->
@@ -797,7 +793,7 @@
                         <i class="fab fa-youtube"></i>
                     </div>
                     <h3>YouTube</h3>
-                    <p data-i18n="details">Video teachings on financial literacy, entrepreneurship, and Kingdom principles.</p>
+                    <p data-i18n="youtub_desc">Video teachings on financial literacy, entrepreneurship, and Kingdom principles.</p>
                     <a href="https://youtube.com/@FinMastery" target="_blank" class="btn" data-i18n="subscribe">Subscribe</a>
                 </div>
                 
@@ -807,7 +803,7 @@
                         <i class="fas fa-envelope"></i>
                     </div>
                     <h3>Email</h3>
-                    <p data-i18n="details">For media inquiries, speaking engagements, and partnerships.</p>
+                    <p data-i18n="email_desc">For media inquiries, speaking engagements, and partnerships.</p>
                     <a href="mailto:contact@fkalbert.com" class="btn" data-i18n="email_me">Email Me</a>
                 </div>
             </div>
@@ -927,11 +923,11 @@
             "connect_with_me": "Connect With Me",
             "my_ventures": "My Ventures",
             "founder": "Founder",
-            "finmastery_desc": "Financial literacy school dedicated to empowering individuals with practical money education and strategies for wealth creation",
-            "gospeltruths_desc": "Digital platform that teaches the foundational truths of the Gospel of Christ to inspire spiritual growth and biblical understanding",
-            "adsbego_desc": "Investment-focused platform that mobilizes capital for high-impact ventures, empowering individuals to grow their wealth",
-            "perus_desc": "Cross-sector holding company driving innovation in real estate, agriculture, logistics, tech, and finance across Ghana and Spain",
-            "pitfund_desc": "Private investment trust that raises capital for curated, profitable ventures offering equity opportunities to strategic partners",
+            "finmastery_desc": "Financial literacy school dedicated to empowering individuals with practical money education and strategies for wealth creation.",
+            "gospeltruths_desc": "Digital platform that teaches the foundational truths of the Gospel of Christ to inspire spiritual growth and biblical understanding.",
+            "adsbego_desc": "Investment-focused platform that mobilizes capital for high-impact ventures, empowering individuals to grow their wealth.",
+            "perus_desc": "Cross-sector holding company driving innovation in real estate, agriculture, logistics, tech, and finance across Ghana and Spain.",
+            "pitfund_desc": "Private investment trust that raises capital for curated, profitable ventures offering equity opportunities to strategic partners.",
             "venture_desc": "Impact-driven entrepreneur building platforms that transform lives through financial education, Gospel truth, and strategic investments.",
             "visit_platform": "Visit Platform",
             "explore_teachings": "Explore Teachings",
@@ -946,11 +942,19 @@
             "i am 4": "\"Raising Kingdom leaders through financial mastery and Gospel truth.\"",
             "connect_title": "Connect With Me",
             "connect_sub": "Whether you're an investor, collaborator, student, or fellow visionary, I'd love to connect with you across platforms where impact begins.",
-            "connect": "Connect",
-            "message": "Message directly for consultations, partnerships, or business inquiries.",
-            "follow": "Follow my journey through visuals, stories, and Kingdom business insights.",
+            "linkedin_connect": "Connect",
+            "facebook_connect": "Connect",
+            "message": "Message",
+            "facebook_desc": "Inspire, lead, and build communities with purpose.",
+            "WhatsApp_desc": "Message directly for consultations, partnerships, or business inquiries.",
+            "linkedin_desc": "For professional networking, investor relations, and leadership content.",
+            "instagram_desc": "Follow my journey through visuals, stories, and Kingdom business insights.",
+            "twitter_desc": "Daily financial wisdom, Gospel truths, and leadership thoughts.",
+            "youtub_desc": "Video teachings on financial literacy, entrepreneurship, and Kingdom principles.",
+            "follow": "Follow",
             "subscribe": "Subscribe",
             "email_me": "Email Me",
+            "email_desc": "For media inquiries, speaking engagements, and partnerships.",
             "quick_links": "Quick Links",
             "contact_info": "Contact Info",
             "details": "Impact-driven entrepreneur building platforms that transform lives through financial education, Gospel truth, and strategic investments.",
@@ -960,6 +964,7 @@
             "connect_with_me_footer": "Connect",
             "details_quote": "\"Raising Kingdom leaders through financial mastery and Gospel truth.\""
         },
+    
         es: {
             "welcome": "Empresario en Serie Impulsado por el Impacto",
             "welcome_sub": "Fundador de plataformas que transforman vidas a través de la educación financiera, la verdad del Evangelio y las inversiones estratégicas en múltiples industrias.",
@@ -986,11 +991,19 @@
             "i am 4": "\"Formando líderes del Reino a través del dominio financiero y la verdad del Evangelio.\"",
             "connect_title": "Conéctate Conmigo",
             "connect_sub": "Ya sea que seas un inversionista, colaborador, estudiante o un visionario, me encantaría conectarme contigo en las plataformas donde comienza el impacto.",
-            "connect": "Conectar",
-            "message": "Mensaje directamente para consultas, asociaciones o consultas comerciales.",
-            "follow": "Sigue mi viaje a través de imágenes, historias y conocimientos de negocios del Reino.",
+            "linkedin_connect": "Conectar",
+            "facebook_connect": "Conectar",
+            "message": "Mensaje",
+            "facebook_desc": "Inspira, lidera y construye comunidades con propósito.",
+            "WhatsApp_desc": "Mensaje directamente para consultas, asociaciones o consultas comerciales.",
+            "linkedin_desc": "Para networking profesional, relaciones con inversores y contenido de liderazgo.",
+            "instagram_desc": "Sigue mi viaje a través de imágenes, historias y conocimientos de negocios del Reino.",
+            "twitter_desc": "Sabiduría financiera diaria, verdades del Evangelio y pensamientos de liderazgo.",
+            "youtub_desc": "Enseñanzas en video sobre educación financiera, emprendimiento y principios del Reino.",
+            "follow": "Seguir",
             "subscribe": "Suscribirse",
             "email_me": "Envíame un correo",
+            "email_desc": "Para consultas de prensa, conferencias y asociaciones.",
             "quick_links": "Enlaces Rápidos",
             "contact_info": "Información de Contacto",
             "details": "Emprendedor impulsado por el impacto, construyendo plataformas que transforman vidas a través de la educación financiera, la verdad del Evangelio y las inversiones estratégicas.",
@@ -1000,246 +1013,6 @@
             "connect_with_me_footer": "Conectar",
             "details_quote": "\"Formando líderes del Reino a través del dominio financiero y la verdad del Evangelio.\""
         },
-        fr: {
-            "welcome": "Entrepreneur en Série Axé sur l'Impact",
-            "welcome_sub": "Fondateur de plateformes transformant des vies grâce à l'éducation financière, la vérité de l'Évangile et des investissements stratégiques dans plusieurs industries.",
-            "explore_ventures": "Explorer Mes Entreprises",
-            "connect_with_me": "Connectez-vous Avec Moi",
-            "my_ventures": "Mes Entreprises",
-            "founder": "Fondateur",
-            "finmastery_desc": "École de littératie financière dédiée à l'autonomisation des individus grâce à une éducation pratique sur l'argent et des stratégies de création de richesse.",
-            "gospeltruths_desc": "Plateforme numérique qui enseigne les vérités fondamentales de l'Évangile du Christ pour inspirer la croissance spirituelle et la compréhension biblique.",
-            "adsbego_desc": "Plateforme axée sur l'investissement qui mobilise des capitaux pour des entreprises à fort impact, permettant aux individus de développer leur richesse.",
-            "perus_desc": "Société holding multisectorielle favorisant l'innovation dans l'immobilier, l'agriculture, la logistique, la technologie et la finance au Ghana et en Espagne.",
-            "pitfund_desc": "Fonds d'investissement privé qui lève des capitaux pour des entreprises sélectionnées et rentables, offrant des opportunités de participation à des partenaires stratégiques.",
-            "venture_desc": "Entrepreneur axé sur l'impact, créant des plateformes qui transforment des vies grâce à l'éducation financière, la vérité de l'Évangile et des investissements stratégiques.",
-            "visit_platform": "Visiter la Plateforme",
-            "explore_teachings": "Explorer les Enseignements",
-            "learn_investments": "Apprendre sur les Investissements",
-            "discover_perus": "Découvrir Perus",
-            "investor_info": "Informations pour les Investisseurs",
-            "about_me": "À Propos de Moi",
-            "about_title": "Fondateur d'Entreprises Axées sur l'Impact",
-            "i am 1": "Je suis un entrepreneur visionnaire engagé à créer des plateformes qui transforment des vies grâce à l'éducation financière, la vérité de l'Évangile et des investissements stratégiques.",
-            "i am 2": "Avec des entreprises couvrant la littératie financière, l'enseignement biblique, la gestion des investissements et le développement commercial multisectoriel, ma mission est d'autonomiser les individus et les communautés pour atteindre la liberté financière et la croissance spirituelle.",
-            "i am 3": "Grâce à FinMastery, j'aide les gens à se libérer des mentalités de pauvreté. Avec The Gospel Truths, je diffuse un enseignement biblique solide. Grâce à Ads Bego, PERUS Group et PIT Fund, je crée des opportunités de création de richesse et de développement économique.",
-            "i am 4": "\"Former des leaders du Royaume grâce à la maîtrise financière et à la vérité de l'Évangile.\"",
-            "connect_title": "Connectez-vous Avec Moi",
-            "connect_sub": "Que vous soyez un investisseur, un collaborateur, un étudiant ou un visionnaire, j'aimerais me connecter avec vous sur les plateformes où l'impact commence.",
-            "connect": "Se Connecter",
-            "message": "Message directement pour des consultations, des partenariats ou des demandes commerciales.",
-            "follow": "Suivez mon parcours à travers des visuels, des histoires et des idées d'affaires du Royaume.",
-            "subscribe": "S'abonner",
-            "email_me": "Envoyez-moi un e-mail",
-            "quick_links": "Liens Rapides",
-            "contact_info": "Informations de Contact",
-            "details": "Entrepreneur axé sur l'impact, créant des plateformes qui transforment des vies grâce à l'éducation financière, la vérité de l'Évangile et des investissements stratégiques.",
-            "home": "Accueil",
-            "ventures": "Entreprises",
-            "about": "À Propos",
-            "connect_with_me_footer": "Se Connecter",
-            "details_quote": "\"Former des leaders du Royaume grâce à la maîtrise financière et à la vérité de l'Évangile.\""
-        },
-        de: {
-            "welcome": "Wirkungsorientierter Serienunternehmer",
-            "welcome_sub": "Gründer von Plattformen, die Leben durch Finanzbildung, evangelische Wahrheit und strategische Investitionen in verschiedenen Branchen verändern.",
-            "explore_ventures": "Meine Unternehmen Erkunden",
-            "connect_with_me": "Mit Mir Verbinden",
-            "my_ventures": "Meine Unternehmen",
-            "founder": "Gründer",
-            "finmastery_desc": "Finanzbildungsschule, die Einzelpersonen mit praktischer Geldbildung und Strategien zur Vermögensbildung stärkt.",
-            "gospeltruths_desc": "Digitale Plattform, die die grundlegenden Wahrheiten des Evangeliums von Christus lehrt, um spirituelles Wachstum und biblisches Verständnis zu fördern.",
-            "adsbego_desc": "Investitionsorientierte Plattform, die Kapital für wirkungsstarke Unternehmen mobilisiert und Einzelpersonen befähigt, ihr Vermögen zu vermehren.",
-            "perus_desc": "Branchenübergreifende Holdinggesellschaft, die Innovationen in Immobilien, Landwirtschaft, Logistik, Technologie und Finanzen in Ghana und Spanien vorantreibt.",
-            "pitfund_desc": "Privater Investmentfonds, der Kapital für ausgewählte, rentable Unternehmen sammelt und strategischen Partnern Beteiligungsmöglichkeiten bietet.",
-            "venture_desc": "Wirkungsorientierter Unternehmer, der Plattformen aufbaut, die Leben durch Finanzbildung, Evangeliumswahrheit und strategische Investitionen verändern.",
-            "visit_platform": "Plattform Besuchen",
-            "explore_teachings": "Lehren Erkunden",
-            "learn_investments": "Über Investitionen Lernen",
-            "discover_perus": "Perus Entdecken",
-            "investor_info": "Informationen für Investoren",
-            "about_me": "Über Mich",
-            "about_title": "Gründer von Wirkungsorientierten Unternehmen",
-            "i am 1": "Ich bin ein visionärer Unternehmer, der sich dafür einsetzt, Plattformen zu schaffen, die Leben durch Finanzbildung, Evangeliumswahrheit und strategische Investitionen verändern.",
-            "i am 2": "Mit Unternehmen in den Bereichen Finanzkompetenz, biblische Lehre, Investmentmanagement und branchenübergreifende Geschäftsentwicklung ist es meine Mission, Einzelpersonen und Gemeinschaften zu befähigen, finanzielle Freiheit und spirituelles Wachstum zu erreichen.",
-            "i am 3": "Durch FinMastery helfe ich Menschen, sich von Armutsmentalitäten zu befreien. Mit The Gospel Truths verbreite ich solide biblische Lehren. Durch Ads Bego, PERUS Group und PIT Fund schaffe ich Möglichkeiten zur Vermögensbildung und wirtschaftlichen Entwicklung.",
-            "i am 4": "\"Königreichsführer durch finanzielle Meisterschaft und Evangeliumswahrheit aufbauen.\"",
-            "connect_title": "Mit Mir Verbinden",
-            "connect_sub": "Egal, ob Sie Investor, Mitarbeiter, Student oder Visionär sind, ich würde mich freuen, mich mit Ihnen auf Plattformen zu verbinden, auf denen Wirkung beginnt.",
-            "connect": "Verbinden",
-            "message": "Direktnachricht für Beratungen, Partnerschaften oder Geschäftsfragen.",
-            "follow": "Folgen Sie meiner Reise durch Bilder, Geschichten und Einblicke in das Königreichsgeschäft.",
-            "subscribe": "Abonnieren",
-            "email_me": "E-Mail senden",
-            "quick_links": "Schnellzugriff",
-            "contact_info": "Kontaktinformationen",
-            "details": "Wirkungsorientierter Unternehmer, der Plattformen aufbaut, die Leben durch Finanzbildung, Evangeliumswahrheit und strategische Investitionen verändern.",
-            "home": "Startseite",
-            "ventures": "Unternehmen",
-            "about": "Über Mich",
-            "connect_with_me_footer": "Verbinden",
-            "details_quote": "\"Königreichsführer durch finanzielle Meisterschaft und Evangeliumswahrheit aufbauen.\""
-        },
-        pt: {
-            "welcome": "Empreendedor Serial Orientado para Impacto",
-            "welcome_sub": "Fundador de plataformas que transformam vidas através da educação financeira, verdade do Evangelho e investimentos estratégicos em vários setores.",
-            "explore_ventures": "Explorar Meus Empreendimentos",
-            "connect_with_me": "Conectar Comigo",
-            "my_ventures": "Meus Empreendimentos",
-            "founder": "Fundador",
-            "finmastery_desc": "Escola de educação financeira dedicada a capacitar indivíduos com educação prática sobre dinheiro e estratégias para criação de riqueza.",
-            "gospeltruths_desc": "Plataforma digital que ensina as verdades fundamentais do Evangelho de Cristo para inspirar crescimento espiritual e compreensão bíblica.",
-            "adsbego_desc": "Plataforma focada em investimentos que mobiliza capital para empreendimentos de alto impacto, capacitando indivíduos a aumentar sua riqueza.",
-            "perus_desc": "Holding multissetorial que impulsiona a inovação em imóveis, agricultura, logística, tecnologia e finanças em Gana e Espanha.",
-            "pitfund_desc": "Fundo de investimento privado que capta recursos para empreendimentos selecionados e lucrativos, oferecendo oportunidades de participação a parceiros estratégicos.",
-            "venture_desc": "Empreendedor orientado para impacto, construindo plataformas que transformam vidas através da educação financeira, verdade do Evangelho e investimentos estratégicos.",
-            "visit_platform": "Visitar Plataforma",
-            "explore_teachings": "Explorar Ensinamentos",
-            "learn_investments": "Aprender Sobre Investimentos",
-            "discover_perus": "Descobrir Perus",
-            "investor_info": "Informação para Investidores",
-            "about_me": "Sobre Mim",
-            "about_title": "Fundador de Negócios Orientados para Impacto",
-            "i am 1": "Sou um empreendedor visionário comprometido em criar plataformas que transformam vidas através da educação financeira, verdade do Evangelho e investimentos estratégicos.",
-            "i am 2": "Com empreendimentos que abrangem alfabetização financeira, ensino bíblico, gestão de investimentos e desenvolvimento empresarial multissetorial, minha missão é capacitar indivíduos e comunidades a alcançar liberdade financeira e crescimento espiritual.",
-            "i am 3": "Através do FinMastery, ajudo as pessoas a se libertarem de mentalidades de pobreza. Com The Gospel Truths, espalho ensinamentos bíblicos sólidos. Por meio da Ads Bego, PERUS Group e PIT Fund, crio oportunidades para geração de riqueza e desenvolvimento econômico.",
-            "i am 4": "\"Formando líderes do Reino através da maestria financeira e da verdade do Evangelho.\"",
-            "connect_title": "Conectar Comigo",
-            "connect_sub": "Quer seja um investidor, colaborador, estudante ou visionário, adoraria conectar consigo nas plataformas onde o impacto começa.",
-            "connect": "Conectar",
-            "message": "Mensagem direta para consultas, parcerias ou questões comerciais.",
-            "follow": "Siga minha jornada por visuais, histórias e insights de negócios do Reino.",
-            "subscribe": "Inscrever-se",
-            "email_me": "Envie-me um e-mail",
-            "quick_links": "Links Rápidos",
-            "contact_info": "Informação de Contacto",
-            "details": "Empreendedor orientado para impacto, construindo plataformas que transformam vidas através da educação financeira, verdade do Evangelho e investimentos estratégicos.",
-            "home": "Início",
-            "ventures": "Empreendimentos",
-            "about": "Sobre Mim",
-            "connect_with_me_footer": "Conectar",
-            "details_quote": "\"Formando líderes do Reino através da maestria financeira e da verdade do Evangelho.\""
-        },
-        it: {
-            "welcome": "Imprenditore Seriale Guidato dall'Impatto",
-            "welcome_sub": "Fondatore di piattaforme che trasformano vite attraverso l'educazione finanziaria, la verità del Vangelo e investimenti strategici in diversi settori.",
-            "explore_ventures": "Esplora le Mie Iniziative",
-            "connect_with_me": "Connettiti con Me",
-            "my_ventures": "Le Mie Iniziative",
-            "founder": "Fondatore",
-            "finmastery_desc": "Scuola di alfabetizzazione finanziaria dedicata a responsabilizzare le persone con educazione pratica al denaro e strategie per la creazione di ricchezza.",
-            "gospeltruths_desc": "Piattaforma digitale che insegna le verità fondamentali del Vangelo di Cristo per ispirare la crescita spirituale e la comprensione biblica.",
-            "adsbego_desc": "Piattaforma focalizzata sugli investimenti che mobilita capitali per iniziative ad alto impatto, consentendo alle persone di far crescere la propria ricchezza.",
-            "perus_desc": "Holding multisettoriale che guida l'innovazione in immobiliare, agricoltura, logistica, tecnologia e finanza in Ghana e Spagna.",
-            "pitfund_desc": "Fondo di investimento privato che raccoglie capitali per iniziative selezionate e redditizie, offrendo opportunità di partecipazione a partner strategici.",
-            "venture_desc": "Imprenditore guidato dall'impatto che costruisce piattaforme che trasformano vite attraverso l'educazione finanziaria, la verità del Vangelo e investimenti strategici.",
-            "visit_platform": "Visita la Piattaforma",
-            "explore_teachings": "Esplora gli Insegnamenti",
-            "learn_investments": "Impara sugli Investimenti",
-            "discover_perus": "Scopri Perus",
-            "investor_info": "Informazioni per Investitori",
-            "about_me": "Su di Me",
-            "about_title": "Fondatore di Aziende Guidate dall'Impatto",
-            "i am 1": "Sono un imprenditore visionario impegnato a creare piattaforme che trasformano vite attraverso l'educazione finanziaria, la verità del Vangelo e investimenti strategici.",
-            "i am 2": "Con iniziative che spaziano dall'alfabetizzazione finanziaria, insegnamento biblico, gestione degli investimenti e sviluppo aziendale multisettoriale, la mia missione è quella di dare potere a individui e comunità per raggiungere la libertà finanziaria e la crescita spirituale.",
-            "i am 3": "Attraverso FinMastery, aiuto le persone a liberarsi dalla mentalità di povertà. Con The Gospel Truths, diffondo insegnamenti biblici solidi. Attraverso Ads Bego, PERUS Group e PIT Fund, creo opportunità per la creazione di ricchezza e lo sviluppo economico.",
-            "i am 4": "\"Formare leader del Regno attraverso la padronanza finanziaria e la verità del Vangelo.\"",
-            "connect_title": "Connettiti con Me",
-            "connect_sub": "Che tu sia un investitore, collaboratore, studente o visionario, mi piacerebbe connettermi con te sulle piattaforme dove inizia l'impatto.",
-            "connect": "Connetti",
-            "message": "Messaggio diretto per consulenze, partnership o richieste commerciali.",
-            "follow": "Segui il mio viaggio attraverso immagini, storie e approfondimenti sul business del Regno.",
-            "subscribe": "Iscriviti",
-            "email_me": "Mandami una email",
-            "quick_links": "Link Rapidi",
-            "contact_info": "Informazioni di Contatto",
-            "details": "Imprenditore guidato dall'impatto che costruisce piattaforme che trasformano vite attraverso l'educazione finanziaria, la verità del Vangelo e investimenti strategici.",
-            "home": "Home",
-            "ventures": "Iniziative",
-            "about": "Su di Me",
-            "connect_with_me_footer": "Connetti",
-            "details_quote": "\"Formare leader del Regno attraverso la padronanza finanziaria e la verità del Vangelo.\""
-        },
-        zh: {
-            "welcome": "影响力驱动的连续创业者",
-            "welcome_sub": "通过金融教育、福音真理和跨多个行业的战略投资改变生活的平台创始人。",
-            "explore_ventures": "探索我的企业",
-            "connect_with_me": "与我联系",
-            "my_ventures": "我的企业",
-            "founder": "创始人",
-            "finmastery_desc": "致力于通过实用的理财教育和财富创造策略赋能个人的金融素养学校。",
-            "gospeltruths_desc": "教授基督福音根本真理的数字平台，激励属灵成长和圣经理解。",
-            "adsbego_desc": "专注于投资的平台，为高影响力企业动员资本，帮助个人实现财富增长。",
-            "perus_desc": "跨行业控股公司，在加纳和西班牙推动房地产、农业、物流、科技和金融领域的创新。",
-            "pitfund_desc": "私人投资信托，为精选的盈利企业筹集资金，为战略合作伙伴提供股权机会。",
-            "venture_desc": "以影响力为驱动的企业家，通过金融教育、福音真理和战略投资建立改变生活的平台。",
-            "visit_platform": "访问平台",
-            "explore_teachings": "探索教学",
-            "learn_investments": "了解投资",
-            "discover_perus": "发现Perus",
-            "investor_info": "投资者信息",
-            "about_me": "关于我",
-            "about_title": "影响力驱动企业的创始人",
-            "i am 1": "我是一位有远见的企业家，致力于通过金融教育、福音真理和战略投资创建改变生活的平台。",
-            "i am 2": "我的企业涵盖金融素养、圣经教学、投资管理和跨行业业务发展，使命是帮助个人和社区实现财务自由与精神成长。",
-            "i am 3": "通过FinMastery，我帮助人们摆脱贫困思维。通过The Gospel Truths，我传播健全的圣经教义。通过Ads Bego、PERUS Group和PIT Fund，我创造财富增长和经济发展的机会。",
-            "i am 4": "“通过财务掌控和福音真理培养国度领袖。”",
-            "connect_title": "与我联系",
-            "connect_sub": "无论您是投资者、合作者、学生还是有远见的人，我都希望在影响力开始的平台上与您联系。",
-            "connect": "连接",
-            "message": "直接留言以获取咨询、合作或业务咨询。",
-            "follow": "通过视觉、故事和国度商业见解关注我的旅程。",
-            "subscribe": "订阅",
-            "email_me": "给我发邮件",
-            "quick_links": "快速链接",
-            "contact_info": "联系信息",
-            "details": "以影响力为驱动的企业家，通过金融教育、福音真理和战略投资建立改变生活的平台。",
-            "home": "首页",
-            "ventures": "企业",
-            "about": "关于我",
-            "connect_with_me_footer": "联系",
-            "details_quote": "“通过财务掌控和福音真理培养国度领袖。”"
-        },
-        ar: {
-            "welcome": "رجل أعمال متسلسل مدفوع بالتأثير",
-            "welcome_sub": "مؤسس منصات تحول الحياة من خلال التعليم المالي، حق الإنجيل، والاستثمارات الاستراتيجية عبر صناعات متعددة.",
-            "explore_ventures": "استكشف مشاريعي",
-            "connect_with_me": "تواصل معي",
-            "my_ventures": "مشاريعي",
-            "founder": "مؤسس",
-            "finmastery_desc": "مدرسة للثقافة المالية مكرسة لتمكين الأفراد من خلال تعليم مالي عملي واستراتيجيات لبناء الثروة.",
-            "gospeltruths_desc": "منصة رقمية تعلم حقائق الإنجيل الأساسية للمسيح لإلهام النمو الروحي والفهم الكتابي.",
-            "adsbego_desc": "منصة تركز على الاستثمار وتعبئ رأس المال للمشاريع ذات التأثير العالي، وتمكن الأفراد من تنمية ثرواتهم.",
-            "perus_desc": "شركة قابضة متعددة القطاعات تدفع الابتكار في العقارات والزراعة واللوجستيات والتكنولوجيا والتمويل في غانا وإسبانيا.",
-            "pitfund_desc": "صندوق استثمار خاص يجمع رأس المال لمشاريع مختارة ومربحة ويوفر فرص ملكية للشركاء الاستراتيجيين.",
-            "venture_desc": "رائد أعمال مدفوع بالتأثير يبني منصات تغير الحياة من خلال التعليم المالي، حق الإنجيل، والاستثمارات الاستراتيجية.",
-            "visit_platform": "زيارة المنصة",
-            "explore_teachings": "استكشف التعاليم",
-            "learn_investments": "تعلم عن الاستثمارات",
-            "discover_perus": "اكتشف Perus",
-            "investor_info": "معلومات للمستثمرين",
-            "about_me": "معلومات عني",
-            "about_title": "مؤسس شركات مدفوعة بالتأثير",
-            "i am 1": "أنا رائد أعمال ذو رؤية ملتزم بإنشاء منصات تحول الحياة من خلال التعليم المالي، حق الإنجيل، والاستثمارات الاستراتيجية.",
-            "i am 2": "من خلال مشاريع تشمل التثقيف المالي، التعليم الكتابي، إدارة الاستثمارات، وتطوير الأعمال عبر القطاعات، فإن مهمتي هي تمكين الأفراد والمجتمعات لتحقيق الحرية المالية والنمو الروحي.",
-            "i am 3": "من خلال FinMastery أساعد الناس على التحرر من عقلية الفقر. مع The Gospel Truths أنشر تعليماً كتابياً سليماً. ومن خلال Ads Bego وPERUS Group وPIT Fund أخلق فرصاً لبناء الثروة والتنمية الاقتصادية.",
-            "i am 4": "\"تربية قادة المملكة من خلال إتقان المال وحق الإنجيل.\"",
-            "connect_title": "تواصل معي",
-            "connect_sub": "سواء كنت مستثمرًا، متعاونًا، طالبًا، أو صاحب رؤية، يسعدني التواصل معك عبر المنصات حيث يبدأ التأثير.",
-            "connect": "تواصل",
-            "message": "راسلني مباشرة للاستشارات أو الشراكات أو الاستفسارات التجارية.",
-            "follow": "تابع رحلتي من خلال الصور والقصص وأفكار أعمال المملكة.",
-            "subscribe": "اشترك",
-            "email_me": "راسلني عبر البريد",
-            "quick_links": "روابط سريعة",
-            "contact_info": "معلومات الاتصال",
-            "details": "رائد أعمال مدفوع بالتأثير يبني منصات تغير الحياة من خلال التعليم المالي، حق الإنجيل، والاستثمارات الاستراتيجية.",
-            "home": "الرئيسية",
-            "ventures": "مشاريعي",
-            "about": "عنّي",
-            "connect_with_me_footer": "تواصل",
-            "details_quote": "\"تربية قادة المملكة من خلال إتقان المال وحق الإنجيل.\""
-        }
         }
 
     // Set default language
